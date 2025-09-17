@@ -1,6 +1,11 @@
-var contenidoFormulario = document.getElementById("mensaje");
+function envioFormulario() {
+    var name = document.getElementById("name").value;
+    var correo = document.getElementById("correo").value;
+    var mensaje = document.getElementById("mensaje").value;
+    console.log(name);
+    console.log(correo);
+    console.log(mensaje);
 
-function envioFormulario(){
-    console.log(contenidoFormulario);
-    
+    event.preventDefault();
 }
+
